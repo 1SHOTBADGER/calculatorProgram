@@ -12,15 +12,34 @@ printf("\n Choose a oprerator (+ - * /): ");
 scanf("%c", &operator);
 
 printf("Enter number 1 : ");
-scanf("%lf", &num1);l
+scanf("%lf", &num1);
 
 printf("Enter number 2: ");
 scanf("%lf", &num2);
 
 switch(operator){
-defualt:
+
 case '+':
-    result = num1
+    result = num1 + num2;
+    printf("'n reslut: %.2lf", result);
+    break;
+    
+case '-':
+    result = num1 - num2;
+    printf("'n reslut: %.2lf", result);
+    break;
+
+case '*':
+    result = num1 * num2;
+    printf("'n reslut: %.2lf", result);
+    break;
+
+case '/':
+    result = num1 / num2;
+    printf("\n result: %.2lf", result);
+    break;
+
+defualt:    
     printf("%c is not valid", operator);
 
 }
